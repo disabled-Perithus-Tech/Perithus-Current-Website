@@ -346,6 +346,16 @@
         margin-left: 20px; 
         margin-right: 20px;
     }
+
+    .btnQuantoCusta{
+        margin-top: 100px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 15px #FFFDFD;
+        font-weight: 600;
+        background-color: #F9AF1B;
+        align-self: center;
+        margin-left: 0px;
+    }
  
     .divParceiros1{
         display: none;
