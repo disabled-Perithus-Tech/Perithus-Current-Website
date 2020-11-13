@@ -1,0 +1,89 @@
+.divBackgroundContato{
+    align-self: center; 
+    margin-left: 100px; 
+    margin-right: 100px; 
+    margin-top: 150px;
+}
+
+.divFormContato{
+    margin-right: 150px; 
+    margin-left: 150px; 
+    padding-top: 150px; 
+    padding-bottom: 250px;
+}
+
+.iconInputContato{
+    background-color: white;
+    border-right: transparent;
+}
+
+.inputContato{
+    border-left: transparent;
+}
+
+.inputAction{
+    border-color: #3F4D79!important;
+}
+
+.divBtnEnviar{
+    display: flex;
+    justify-content: center;
+}
+
+.btnFonmEnviar{
+    background-color: #9381B4;
+    color: #040404;
+    height: 40px;
+    border-radius: 6px;
+    width: 108px;
+    margin-top: 50px;
+}
+
+.divEndereco{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.textContato{
+    font-family:'Niramit', sans-serif; 
+    font-size: 40px; 
+    font-weight: 300;
+}
+
+.textEndereço{
+    font-family:'Niramit', sans-serif; 
+    font-size: 27px; 
+    font-weight: lighter;
+}
+
+.divMapa{
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 988px){
+    .divBackgroundContato{
+        align-self: center; 
+        margin-left: 20px; 
+        margin-right: 20px; 
+        margin-top: 100px;
+        background-size: 80%;
+    }
+
+    .divFormContato{
+        margin-right: 20px; 
+        margin-left: 20px; 
+        padding-top: 50px; 
+        padding-bottom: 0px;
+    }
+
+    .textContato{
+        font-size: 30px; 
+        font-weight: 300;
+    }
+
+    .textEndereço{
+        font-size: 18px; 
+    }
+}
