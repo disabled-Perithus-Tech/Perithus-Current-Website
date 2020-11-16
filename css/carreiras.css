@@ -1,0 +1,216 @@
+.divTextBanner{
+    margin-right: 50px; 
+    margin-left: 100px; 
+    padding-bottom: 100px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.title1Banner{
+    font-family: 'Lalezar', cursive; 
+    font-size: 80px; 
+    margin-bottom: 0rem;
+    margin-left: -250px;
+}
+
+.title2Banner{
+    font-family: 'Lalezar', cursive; 
+    font-size: 80px; 
+    margin-bottom: 0rem;
+    margin-left: 250px;
+}
+
+.divSecao{
+    display: flex;
+    flex-direction: row;
+    margin: 80px;
+    margin-top: 150px;
+    justify-content: space-between;
+}
+
+.divSubText{
+    margin-right: 30px;
+}
+
+.titleSecao{
+    font-weight: bold;
+    font-family:'Niramit', sans-serif;; 
+    font-size: 27px; 
+}
+
+.textSubTitle{
+    font-family: 'Lalezar', cursive; 
+    font-size: 60px; 
+    color: #FFB000;
+}
+
+.textDescPerithus{
+    font-family:'Niramit', sans-serif;; 
+    font-size: 18px; 
+}
+
+.divLinePalavras{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.divColuna{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgAbreAspas{
+    align-self: flex-start;
+}
+
+.textDescPalavra{
+    font-family:'Niramit', sans-serif;; 
+    font-size: 18px; 
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.imgFechaAspas{
+    align-self: flex-end;
+}
+
+.divLineVaga{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.divVaga{
+    border: 2px solid #434F81;
+    padding-top: 30px;
+    align-self: flex-start;
+    width: 346px;
+}
+
+.textVaga{
+    font-family:'Niramit', sans-serif;; 
+    font-size: 27px; 
+    margin: 20px;
+}
+
+.divMeCandidatar{
+    padding: 20px;
+    background-color: #434F81;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.textMeCandidatar{
+    font-family:'Niramit', sans-serif;; 
+    font-size: 18px; 
+    font-weight: bold;
+    align-self: center;
+    margin-bottom: 0px;
+}
+
+.btnFaleConosco{
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px #FFFDFD;
+    font-weight: 600;
+    background-color: #F9AF1B;
+    align-self: flex-end;
+}
+
+
+.btnBodyActions:hover{
+    background-color: #FFDC97!important;
+    border-color: #FFDC97!important;
+}
+
+.btnBodyActions:active{
+    background-color: #B07D17!important;
+}
+
+@media only screen and (max-width: 988px){
+    .divTextBanner{
+        margin-right: 50px; 
+        margin-left: 30px; 
+        padding-bottom: 5px;
+        margin-top: 30px;
+    }
+    
+    .title1Banner{
+        font-size: 18px; 
+        margin-bottom: -8px;
+        margin-left: -80px;
+    }
+
+    .title2Banner{
+        font-size: 18px; 
+        margin-bottom: -8px;
+        margin-left: 80px;
+    }
+
+    .divSecao{
+        flex-direction: column;
+        margin: 10px;
+        margin-top: 50px;
+        justify-content: unset;
+    }
+
+    .divSubText{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .titleSecao{
+        font-size: 18px; 
+        margin-top: 100px;
+    }
+    
+    .textSubTitle{
+        font-size: 36px; 
+    }
+    
+    .textDescPerithus{
+        font-size: 12px; 
+    }
+
+    .imgPerithus{
+        width: 80%;
+        align-self: center;
+    }
+
+    .divLinePalavras{
+        flex-direction: column;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .imgAbreAspas{
+        margin-top: 50px;
+    }
+
+    .divLineVaga{
+        flex-direction: column;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        align-self: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .divVaga{
+        margin-bottom: 50px;
+    }
+}
