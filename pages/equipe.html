@@ -20,10 +20,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
 
-    <!--Arquivos css-->
+    <!--Arquivo css-->
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/body.css">
-    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/equipe.css">
     <link rel="stylesheet" href="../css/footer.css">
 </head>
 
@@ -33,7 +33,7 @@
     <div>
 
         <!--Header start-->
-        <div class="divBanner" style="background-image: url(../assets/Vector3.png); ">
+        <div class="divBanner" style="background-image: url(../assets/header.png); ">
             <nav class="navbar navbar-expand-lg" style="margin-top: -10px;">
                 <a class="navbar-brand" href="./index.html">
                     <img src="../assets/logo.png" class="logo">
@@ -50,9 +50,10 @@
                         <li class="nav-item">
                             <a class="nav-link active btnNavActions btnNavActions" href="./index.html">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle btnNavActions" data-toggle="dropdown" href="#" role="button"
-                                aria-haspopup="true" aria-expanded="false">Sobre nós</a>
+                        <li class="nav-item dropdown"
+                            style="background-image: url(../assets/click.png); background-repeat: no-repeat;">
+                            <a class="nav-link dropdown-toggle btnNavActions" data-toggle="dropdown" href="#"
+                                role="button" aria-haspopup="true" aria-expanded="false">Sobre nós</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item btnNavActions text-dark" href="./equipe.html">Quem somos nós</a>
                                 <div class="dropdown-divider"></div>
@@ -60,8 +61,8 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle btnNavActions" data-toggle="dropdown" href="#" role="button"
-                                aria-haspopup="true" aria-expanded="false">Serviços</a>
+                            <a class="nav-link dropdown-toggle btnNavActions" data-toggle="dropdown" href="#"
+                                role="button" aria-haspopup="true" aria-expanded="false">Serviços</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item btnNavActions text-dark" href="./servicos.html">Conheça</a>
                                 <div class="dropdown-divider"></div>
@@ -74,8 +75,7 @@
                         <li class="nav-item">
                             <a class="nav-link btnNavActions" href="./projetos.html">Projetos</a>
                         </li>
-                        <li class="nav-item"
-                            style="background-image: url(../assets/click.png); background-repeat: no-repeat;">
+                        <li class="nav-item">
                             <a class="nav-link btnNavActions" href="./blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
@@ -84,35 +84,116 @@
                     </ul>
                 </div>
             </nav>
-            <div>
-                <form>
-                    <div class="form-group">
-                        <div class="input-group mb-2 divInputBusca">
-                            <input type="text" class="form-control inputBusca" id="busca"
-                                placeholder="Digite o que você procura">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text iconInputBusca">
-                                    <i class="fas fa-search"></i>
-                                </div>
+        </div>
+        <!--Header end-->
+
+        <!--Section Equipe start-->
+        <div>
+            <p class="title primeiroTitulo">
+                EQUIPE
+            </p>
+            <div class="titleSecoes">
+                <div>
+                    <hr class="line" />
+                </div>
+                <div>
+                    <p class="subTitle"> QUEM FAZ ACONTECER NA PERITHUS </p>
+                </div>
+            </div>
+
+            <div id="carouselEquipe" class="carousel slide divCarouselEquipe1" data-ride="carousel" data-interval="0"
+                style="margin-top: 50px;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="text-align: center;">
+                        <div class="divEquipe">
+                            <div class="divCardFoto1">
+                                <img src="../assets/nurian.jpeg" alt="" class="imgCard">
+                            </div>
+                            <div class="divCardFoto2">
+                                <img src="../assets/nurian.jpeg" alt="" class="imgCard">
+                            </div>
+                            <div class="divCardFoto1">
+                                <img src="../assets/nurian.jpeg" alt="" class="imgCard">
                             </div>
                         </div>
                     </div>
-                </form>
+                    <a class="carousel-control-prev" href="#carouselEquipe" role="button" data-slide="prev">
+                        <i class="fas fa-chevron-circle-left fa-3x" style="color: black;"></i>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselEquipe" role="button" data-slide="next">
+                        <i class="fas fa-chevron-circle-right fa-3x" style="color: black;"></i>
+                    </a>
+                </div>
             </div>
-            <div class="divTextBanner">
-                <p class="titleBanner">
-                    NOSSO CONTEÚDO
-                </p>
 
-                <p class="subTitleBanner">
-                    AQUI VOCÊ FICA POR DENTRO DE TUDO QUE FALAMOS SOBRE TECNOLOGIA, CARREIRA E NEGÓCIOS
-                </p>
+            <div id="carouselEquipeMobile" class="carousel slide divCarouselEquipe2" data-ride="carousel" data-interval="0"
+                style="margin-top: 50px;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="text-align: -webkit-center;">
+                        <div class="divCardFoto1">
+                            <img src="../assets/nurian.jpeg" alt="" class="imgCard">
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="text-align: -webkit-center;">
+                        <div class="divCardFoto2">
+                            <img src="../assets/nurian.jpeg" alt="" class="imgCard">
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="text-align: -webkit-center;">
+                        <div class="divCardFoto1">
+                            <img src="../assets/nurian.jpeg" alt="" class="imgCard">
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselEquipeMobile" role="button" data-slide="prev">
+                    <i class="fas fa-chevron-circle-left fa-3x" style="color: black;"></i>
+                </a>
+                <a class="carousel-control-next" href="#carouselEquipeMobile" role="button" data-slide="next">
+                    <i class="fas fa-chevron-circle-right fa-3x" style="color: black;"></i>
+                </a>
             </div>
         </div>
-        <!--Header end-->
     </div>
-    <!--Body end-->
-    
+    <!--Section Equipe end-->
+
+
+    <!--Section História start-->
+    <div class="divSecoes">
+        <p class="title">
+            HISTÓRIA
+        </p>
+        <div class="titleSecoes">
+            <div>
+                <hr class="line" />
+            </div>
+            <div>
+                <p class="subTitle"> DE ONDE VIEMOS E PORQUE ESTAMOS AQUI </p>
+            </div>
+        </div>
+
+        <img src="../assets/historia.png" alt="" class="imgHistoria">
+    </div>
+    <!--Section História end-->
+
+
+    <!--Section Missão start-->
+    <div class="divSecoes">
+        <p class="title">
+            MISSÃO
+        </p>
+        <div class="titleSecoes">
+            <div>
+                <hr class="line" />
+            </div>
+            <div>
+                <p class="subTitle"> PRA ONDE VAMOS </p>
+            </div>
+        </div>
+    </div>
+    <!--Section Missão end-->
+    </div>
+
+
     <!--Footer start-->
     <div class="divFooter" style="background-image: url(../assets/footer.png);">
         <div class="divConteudoFooter">
