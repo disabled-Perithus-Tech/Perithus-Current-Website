@@ -44,6 +44,44 @@
     margin-top: 150px;
 }
 
+.divMissao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+.textMissao{
+    font-family:'Niramit', sans-serif;; 
+    font-size: 18px; 
+    align-self: center;
+}
+
+.textFaleConosco{
+    font-family: 'Lalezar', cursive; 
+    font-size: 40px; 
+    margin-bottom: 50px;
+    color: #060606;
+}
+
+.btnFaleConosco{
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px #FFFDFD;
+    font-weight: 600;
+    background-color: #F9AF1B;
+    align-self: flex-end;
+}
+
+
+.btnBodyActions:hover{
+    background-color: #FFDC97!important;
+    border-color: #FFDC97!important;
+}
+
+.btnBodyActions:active{
+    background-color: #B07D17!important;
+}
+
 @media only screen and (max-width: 988px){
     .divCarouselEquipe1{
         display: none;
@@ -59,6 +97,20 @@
     
     .divCardFoto2{
         width: 300px;
+    }
+
+    .divMissao{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .imgMissao{
+        width: 90%;
+    }
+
+    .textFaleConosco{
+        font-size: 27px;
     }
 
 }
