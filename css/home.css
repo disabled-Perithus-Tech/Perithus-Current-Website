@@ -94,7 +94,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 100px;
     align-items: center;
 }
 
@@ -108,6 +108,36 @@
     margin-top: 50px;
 }
 
+.flip-container {
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin-left: 10px;
+}
+
+.flipper{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    position: relative;
+}
+
+.flip-container:hover .flipper{
+    transform: rotateY(180deg);
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back{
+    transform: rotateY(180deg);
+}
+
 .cardSuaIdeiaBorda{
     border: solid #fff;
     border-top-width: 6px;
@@ -116,8 +146,10 @@
     border-right-width: 8px;
     border-radius: 10px;
     align-self: start;
-    width: 232px;
-    margin-left: 5px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .textSuaIdeiaCard{
