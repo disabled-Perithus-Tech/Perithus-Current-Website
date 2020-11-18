@@ -121,6 +121,15 @@
     align-self: center;
     margin-bottom: 0px;
     text-decoration: underline;
+    color: #fff;
+}
+
+.textMeCandidatar:hover{
+    color: #FFB000;
+}
+
+.textMeCandidatar:visited{
+    color: #FFB000;
 }
 
 .btnFaleConosco{
