@@ -25,6 +25,10 @@
     <link rel="stylesheet" href="../css/body.css">
     <link rel="stylesheet" href="../css/contato.css">
     <link rel="stylesheet" href="../css/footer.css">
+
+    <!--Arquivo JS-->
+    <script src="../js/contato.js"></script>
+
 </head>
 
 <body>
@@ -51,8 +55,8 @@
                             <a class="nav-link active btnNavActions btnNavActions" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle btnNavActions" data-toggle="dropdown" href="#" role="button"
-                                aria-haspopup="true" aria-expanded="false">Sobre nós</a>
+                            <a class="nav-link dropdown-toggle btnNavActions" data-toggle="dropdown" href="#"
+                                role="button" aria-haspopup="true" aria-expanded="false">Sobre nós</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item btnNavActions text-dark" href="./equipe.html">Quem somos nós</a>
                                 <div class="dropdown-divider"></div>
@@ -60,8 +64,8 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle btnNavActions" data-toggle="dropdown" href="#" role="button"
-                                aria-haspopup="true" aria-expanded="false">Serviços</a>
+                            <a class="nav-link dropdown-toggle btnNavActions" data-toggle="dropdown" href="#"
+                                role="button" aria-haspopup="true" aria-expanded="false">Serviços</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item btnNavActions text-dark" href="./servicos.html">Conheça</a>
                                 <div class="dropdown-divider"></div>
@@ -106,66 +110,80 @@
             <div class="divBackgroundContato"
                 style="background-image: url(../assets/Vector2.png); background-repeat: no-repeat;">
                 <div class="divFormContato">
-                    <form>
+                    <form id="formContato">
                         <div class="form-group">
                             <label for="nome">Nome</label>
-                            <div class="input-group mb-2">
+                            <div class="input-group mb-2 divValidateNome">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text iconInputContato inputAction">
+                                    <div class="input-group-text iconInputContato">
                                         <i class="fas fa-user"></i>
                                     </div>
                                 </div>
-                                <input type="text" class="form-control inputContato inputAction" id="nome"
-                                    placeholder="Escreva seu nome completo">
+                                <input type="text" class="form-control inputContato" id="nome"
+                                    placeholder="Escreva seu nome completo" required onchange="validityClass(this)">
+                                <div class="invalid-feedback">
+                                    Por favor, preencha este campo.
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="empresa">Empresa</label>
                             <div class="input-group mb-2">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text iconInputContato inputAction">
+                                    <div class="input-group-text iconInputContato">
                                         <i class="fas fa-briefcase"></i>
                                     </div>
                                 </div>
-                                <input type="text" class="form-control inputContato inputAction" id="empresa"
-                                    placeholder="Escreva o nome da sua empresa">
+                                <input type="text" class="form-control inputContato" id="empresa"
+                                    placeholder="Escreva o nome da sua empresa" required onchange="validityClass(this)">
+                                <div class="invalid-feedback">
+                                    Por favor, preencha este campo.
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
                             <div class="input-group mb-2">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text iconInputContato inputAction">
+                                    <div class="input-group-text iconInputContato">
                                         <i class="fas fa-envelope"></i>
                                     </div>
                                 </div>
-                                <input type="text" class="form-control inputContato inputAction" id="email"
-                                    placeholder="Escreva seu email">
+                                <input type="email" class="form-control inputContato" id="email"
+                                    placeholder="Escreva seu email" required onchange="validityClass(this)">
+                                <div class="invalid-feedback">
+                                    Email inválido, podemos te ajudar a escrever um correto.
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="mensagem">Mensagem</label>
                             <div class="input-group mb-2">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text iconInputContato inputAction">
+                                    <div class="input-group-text iconInputContato">
                                         <i class="fas fa-comment-alt"
                                             style="align-self: flex-start; margin-top: 5px;"></i>
                                     </div>
                                 </div>
-                                <textarea class="form-control inputContato inputAction" id="mensagem"
-                                    placeholder="O que a Perithus pode fazer por você?" rows="4"></textarea>
+                                <textarea class="form-control inputContato" id="mensagem"
+                                    placeholder="O que a Perithus pode fazer por você?" rows="4" required
+                                    onchange="validityClass(this)"></textarea>
+                                <div class="invalid-feedback">
+                                    Por favor, preencha este campo.
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="pesquisa">Pesquisa</label>
                             <div class="input-group mb-2">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text iconInputContato inputAction">
+                                    <div class="input-group-text iconInputContato">
                                         <i class="fas fa-pencil-alt"></i>
                                     </div>
                                 </div>
-                                <select class="custom-select inputContato inputAction" id="pesquisa">
-                                    <option selected>Como você encontrou a Pertihus?</option>
+                                <select class="custom-select inputContato" id="pesquisa" required
+                                    onchange="validityClass(this)">
+                                    <option selected value="">Como você encontrou a Pertihus?</option>
                                     <option>Bubble.io</option>
                                     <option>Instagram</option>
                                     <option>Facebook</option>
@@ -175,10 +193,13 @@
                                     <option>Google</option>
                                     <option>Outros</option>
                                 </select>
+                                <div class="invalid-feedback">
+                                    Por favor, selecione uma opção.
+                                </div>
                             </div>
                         </div>
                         <div class="divBtnEnviar">
-                            <button class="btn btnFomEnviar">
+                            <button class="btn btnFomEnviar" onclick="submitForm()">
                                 Enviar
                             </button>
                         </div>
@@ -208,6 +229,22 @@
                 </div>
             </div>
         </div>
+
+        <form class="was-validated">
+            <div class="mb-3">
+                <label for="validationTextarea">Textarea</label>
+                <textarea class="form-control is-invalid" id="validationTextarea"
+                    placeholder="Required example textarea" required></textarea>
+                <div class="invalid-feedback">
+                    Please enter a message in the textarea.
+                </div>
+            </div>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                <div class="invalid-feedback">Example invalid custom file feedback</div>
+            </div>
+        </form>
     </div>
     <!--Footer start-->
     <div class="divFooter" style="background-image: url(../assets/footer.png);">
