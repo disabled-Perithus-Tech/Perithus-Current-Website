@@ -12,7 +12,7 @@
 }
 
 .subTitleBanner{
-    font-family:'Niramit', sans-serif;; 
+    font-family:'Niramit', sans-serif; 
     font-size: 20px; 
     font-weight: 300;
     margin-right: 300px;
@@ -31,8 +31,11 @@
 }
 
 .btnSaibaMais{
-    font-weight: 500; 
+    font-family:'Niramit', sans-serif; 
+    font-weight: 600; 
+    font-size: 18px;
     border-radius: 15px;
+    padding: 15px 40px;
 }
 
 .btnBodyActions:hover{
@@ -82,7 +85,7 @@
     font-size: 20px; 
     padding: 25px;
     padding-top: 30px;
-    text-align: justify;
+    text-align: center;
 }
 
 .divBackgroundSuaIdeia{
@@ -102,6 +105,11 @@
     flex: 1;
     display: flex;
     flex-direction: row;
+}
+
+#carouselSuaIdeia a{
+    top: 10px;
+    bottom: 180px;
 }
 
 .imgConsultoria{
@@ -216,37 +224,79 @@
 
 .divDepoimentosInLine{
     flex: 1; 
-    display: inline-flex; 
+    display: flex;
+    flex-direction: row;
     align-items: center; 
     margin-top: 30px; 
     margin-left: 50px;
-}
-
-.divPrimeiroDepoimento{
-    flex: 1; 
-    display: inline-flex;
+    margin-right: 30px;
 }
 
 .divDepoimento{
     flex: 1; 
-    display: inline-flex; 
-    margin-left: 50px; 
-    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    height: 635px;
+    background-color: #F4EFEF;
 }
 
 .divTextDepoimentos{
-    background-color: #C4C4C4;
+    min-height: 355px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .textDepoimentos{
     font-family:'Niramit', sans-serif; 
     font-size: 18px; 
     padding: 10px;
-    text-align: justify;
+    text-align: center;
+}
+
+.textSendDepoimentos{
+    font-family:'Niramit', sans-serif; 
+    font-size: 18px; 
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#carouselDepoimentos1 .carousel-indicators {
+    margin-bottom: -60px;
+}
+
+#carouselDepoimentos1 .carousel-indicators li {
+	height: 25px;
+    width: 25px;
+    border-radius: 200px;
+    margin: 0px 8px;
+    border: 2px solid #074680;
+    background-color: transparent;
+}
+
+#carouselDepoimentos1 .carousel-indicators li.active {
+	background-color:  #074680;
 }
 
 .divDepoimentosGroup2{
     display: none; 
+}
+
+.carousel-control-next {
+    right: 0;
+    bottom: auto;
+    top: 60px;
+}
+
+
+.carousel-control-prev {
+    right: 0;
+    bottom: auto;
+    top: 60px;
 }
 
 
@@ -282,8 +332,7 @@
     .btnSaibaMais{
         font-weight: 500; 
         border-radius: 15px;
-        height: 30px;
-        width: 141px;
+        padding: 5px 30px;
         font-size: 14px;
         margin-top: -25px;
         background-color: #F9AF1B;
@@ -368,6 +417,9 @@
     .imgSuaIdeia2{
         width: 295px;
         height: 264px;
+        background-size: 90%;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .textSuaIdeia{
@@ -406,22 +458,14 @@
         display: flex; 
         flex-direction: column; 
         justify-content: space-around;
-        align-items: center;
+        align-items: center;margin-right: 0px;
+        background-color: transparent;
     }
 
     .divTextDepoimentos{
-        background-color: #C4C4C4;
         margin-top: 30px;
         margin-bottom: 150px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .textDepoimentos{
-        font-family:'Niramit', sans-serif; 
-        font-size: 18px; 
-        padding: 10px;
-        text-align: justify;
+        min-height: 275px;
     }
 
     .divDepoimentosGroup2{

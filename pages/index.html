@@ -7,6 +7,16 @@
     <title>
         Perithus
     </title>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170460746-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-170460746-1');
+    </script>
 
     <!--ícones-->
     <link href="../fontawesome/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
@@ -34,7 +44,8 @@
 
         <!--Header start-->
         <div class="divBanner" style="background-image: url(../assets/bannerHome.png); ">
-            <nav class="navbar navbar-expand-lg" style="margin-top: -10px;">
+            <nav class="navbar navbar-expand-lg"
+                style="margin-top: -10px; margin-top: -10px; display: flex; justify-content: space-between;">
                 <a class="navbar-brand" href="./index.html">
                     <img src="../assets/logo.png" class="logo">
                 </a>
@@ -46,53 +57,76 @@
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="conteudoNavbarSuportado">
-                    <ul class="navbar-nav  justify-content-end" style="margin-bottom: 40px;">
-                        <li class="nav-item"
-                            style="background-image: url(../assets/click.png); background-repeat: no-repeat;">
-                            <a class="nav-link active btnNavActions btnNavActions" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle btnNavActions" data-toggle="dropdown" href="#"
-                                role="button" aria-haspopup="true" aria-expanded="false">Sobre nós</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item btnNavActions text-dark" href="./equipe.html">Quem somos nós</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active btnNavActions btnNavActions" href="./servicos.html">Serviços</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btnNavActions" href="./carreiras.html">Carreiras</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btnNavActions" href="./projetos.html">Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btnNavActions" href="./blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btnNavActions" href="./contato.html">Contato</a>
-                        </li>
-                    </ul>
+                    <div class="containerMenu">
+                        <a href="#" class="nav-link btnNavActions btnLogin" style="margin-top: 50px;">
+                            <i class="fa fa-sign-in-alt" style="margin-left: 10px;"></i>
+                            LOGIN
+                        </a class="btnNavActions">
+                        <ul class="navbar-nav  justify-content-end" style="margin-bottom: 40px;">
+                            <li class="nav-item">
+                                <a class="nav-link active btnNavActions" href="./index.html"
+                                    style="color:#FFB000;">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link btnNavActions" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Sobre nós
+                                    <i class="fa fa-chevron-down"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item btnNavActions text-dark" href="./equipe.html">Quem somos
+                                        nós</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active btnNavActions btnNavActions"
+                                    href="./servicos.html">Serviços</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link btnNavActions" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Carreiras
+                                    <i class="fa fa-chevron-down"></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item btnNavActions text-dark"
+                                        href="./carreiras.html">Carreiras</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btnNavActions" href="./projetos.html">Projetos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btnNavActions" href="./contato.html">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btnNavActions btnLoginNav" href="#">
+                                    <i class="fa fa-sign-in-alt" style="margin-left: 10px;"></i>
+                                    LOGIN
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
             <div class="divTextBanner">
                 <p class="text-white titleBanner">
-                    CRIE SEU SISTEMA EM
+                    CRIE SEU APLICATIVO EM
                 </p>
                 <p class="text-white titleBanner">
                     POUCAS SEMANAS
                 </p>
 
                 <p class="text-white subTitleBanner text-justify">
-                    ALAVANCAMOS STARTUPS E PMEs, ENTREGANDO SEU SISTEMA OU PLATAFORMA EM SEMANAS
-                    E ATÉ 10 VEZES MAIS BARATO DO QUE QUALQUER OUTRA SOFTWARE HOUSE
+                    ENTREGAMOS SEU APLICATIVO OU PLATAFORMA EM SEMANAS
+                </p>
+                <p class="text-white subTitleBanner text-justify" style="margin-top: -1rem;">
+                    E ATÉ 10 VEZES MAIS BARATO COM A MÁXIMA QUALIDADE!
                 </p>
             </div>
 
             <div class="divSaibaMaisBanner mx-auto">
                 <p class="textSaibaMaisBanner text-white">
-                    A REVOLUÇÃO JÁ COMEÇOU!
+                    NÃO PERCA TEMPO!
                 </p>
 
                 <button class="btn btn-warning btnSaibaMais btnBodyActions"> SAIBA MAIS </button>
@@ -126,7 +160,7 @@
                     </div>
                     <div class="divDescVantegem">
                         <p class="textDescVantegem">
-                            Crie seu projeto com uma redução de até 10 vezes comparado ao desenvolvimento tradicional.
+                            Não perdemos negócio! Crie seu projeto com uma redução de até 10 vezes no custo!
                         </p>
                     </div>
                 </div>
@@ -156,8 +190,8 @@
                     </div>
                     <div class="divDescVantegem">
                         <p class="textDescVantegem">
-                            Podemos integrar os sistemas desenvolvidos por nós com o sistema que você já utiliza,
-                            facilitando a transformação digital da sua empresa!
+                            Nossa garantia de satisfação cobre 15 dias após a entrega do projeto e temos uma das maiores
+                            taxas de aprovação do mercado: 98,6%
                         </p>
                     </div>
                 </div>
@@ -179,8 +213,7 @@
                 </div>
                 <div>
                     <p class="subTitle">
-                        DESENVOLVEMOS SUA IDEIA COM VELOCIDADE, EXPERIÊNCIA DO USUÁRIO E PREÇO
-                        IMBATÍVEL
+                        DESENVOLVEMOS SUA IDEIA COM AGILIDADE, A MELHOR EXPERIÊNCIA E PREÇO IMBATÍVEL
                     </p>
                 </div>
             </div>
@@ -203,14 +236,16 @@
                             </div>
                         </div>
                         <div>
-                            <div class="flip-container" style="width: 395px; margin-top: -75px; height: 220px; margin-right: 0px; margin-left: 30px;">
+                            <div class="flip-container"
+                                style="width: 395px; margin-top: -75px; height: 220px; margin-right: 0px; margin-left: 30px;">
                                 <div class="flipper">
                                     <div class="cardSuaIdeiaBorda front">
                                         <p class="text-white textSuaIdeiaCard">MELHOR EXPERIÊNCIA</p>
                                     </div>
 
                                     <div class="cardSuaIdeiaBorda back">
-                                        <p class="text-white textSuaIdeiaCard">Aplicamos as metodologias LEAN, Growth Driven Design e Agile para entregar mais valor para você!</p>
+                                        <p class="text-white textSuaIdeiaCard">Aplicamos as metodologias LEAN, Growth
+                                            Driven Design e Agile para entregar mais valor para você!</p>
                                     </div>
                                 </div>
                             </div>
@@ -223,14 +258,16 @@
                             <img src="../assets/experiencia.png" alt="" class="imgExperiencia">
                             <img src="../assets/suporte.png" alt="" class="imgSuporte">
                             <img src="../assets/desenvolvimento.png" alt="" class="imgDesenvolvimento">
-                            <div class="flip-container" style="width: 425px; height: 170px; margin-left: 15px; margin-top: 5px;">
+                            <div class="flip-container"
+                                style="width: 425px; height: 170px; margin-left: 15px; margin-top: 5px;">
                                 <div class="flipper">
                                     <div class="cardSuaIdeiaBorda front">
                                         <p class="text-white textSuaIdeiaCard">DESENVOLVIMENTO SOB MEDIDA</p>
                                     </div>
 
                                     <div class="cardSuaIdeiaBorda back">
-                                        <p class="text-white textSuaIdeiaCard">Criamos aplicativos móveis, sistemas e produtos mínimos viáveis do jeito que você quer.</p>
+                                        <p class="text-white textSuaIdeiaCard">Criamos aplicativos móveis, sistemas e
+                                            produtos mínimos viáveis do jeito que você quer.</p>
                                     </div>
                                 </div>
                             </div>
@@ -243,7 +280,8 @@
                                     </div>
 
                                     <div class="cardSuaIdeiaBorda back">
-                                        <p class="text-white textSuaIdeiaCard">Longas filas de espera, chamados não resolvidos e muito stress? Aqui não!
+                                        <p class="text-white textSuaIdeiaCard">Longas filas de espera, chamados não
+                                            resolvidos e muito stress? Aqui não!
                                             Nosso suporte é pensado para te atender de forma ágil e prática.</p>
                                     </div>
                                 </div>
@@ -358,10 +396,10 @@
                         <img src="../assets/sincro.png" style="width: 70%;">
                     </div>
                     <a class="carousel-control-prev" href="#carouselParceiros" role="button" data-slide="prev">
-                        <i class="fas fa-chevron-circle-left fa-3x" style="color: black;"></i>
+                        <i class="fas fa-chevron-circle-left fa-2x" style="color: black;"></i>
                     </a>
                     <a class="carousel-control-next" href="#carouselParceiros" role="button" data-slide="next">
-                        <i class="fas fa-chevron-circle-right fa-3x" style="color: black;"></i>
+                        <i class="fas fa-chevron-circle-right fa-2x" style="color: black;"></i>
                     </a>
                 </div>
             </div>
@@ -383,66 +421,165 @@
             </div>
             <br />
             <div class="divDepoimentosGroup1">
-                <div class="divDepoimentosInLine">
-                    <div class="divPrimeiroDepoimento">
-                        <img src="../assets/alexandre.png" alt="">
-                        <div class="divTextDepoimentos">
-                            <p class="textDepoimentos">
-                                "A Perithus Technologies é nossa parceira de Tecnologia. Confio no trabalho da
-                                equipe!
-                                Eles sempre buscam a excelência."
-                            </p>
-                            <p class="text-right textDepoimentos" style="padding-top: 5px;">
-                                Alexandre Ramin
-                            </p>
+                <div id="carouselDepoimentos1" class="carousel slide carousel-fade" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselDepoimentos1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselDepoimentos1" data-slide-to="1"></li>
+                        <li data-target="#carouselDepoimentos1" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="divDepoimentosInLine">
+                                <div class="divDepoimento">
+                                    <img src="../assets/alexandre.png" alt="" style="height: 282px;">
+                                    <div class="divTextDepoimentos">
+                                        <p class="textDepoimentos">
+                                            "A Perithus Technologies é nossa parceira de Tecnologia. Confio no trabalho
+                                            da
+                                            equipe!
+                                            Eles sempre buscam a excelência."
+                                        </p>
+                                        <p class="textSendDepoimentos" style="padding-top: 5px;">
+                                            Alexandre Ramin
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="divDepoimento">
+                                    <img src="../assets/semFoto-depoimentos.png" alt="">
+                                    <div class="divTextDepoimentos">
+                                        <p class="textDepoimentos">
+                                            "Eu sempre trabalho com muitos produtos e variações. A Perithus trouxe uma
+                                            otimização
+                                            das
+                                            minhas vendas e dia-a-dia e me permitiu ficar mais próxima dos meus clientes
+                                            com
+                                            minha
+                                            loja virtual."
+                                        </p>
+                                        <p class="textSendDepoimentos" style="padding-top: 5px;">
+                                            Juliana Vilaça
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="divDepoimento">
+                                    <img src="../assets/semFoto-depoimentos.png" alt="">
+                                    <div class="divTextDepoimentos">
+                                        <p class="textDepoimentos">
+                                            "A Perithus é mais que uma prestadora de serviço no desenvolvimento de
+                                            soluções
+                                            tecnológicas
+                                            pra nós, sentimos que fazem parte do nosso time de fato, profissionais de
+                                            excelente
+                                            qualidade e extremamente focados na entrega dos resultados que esperamos."
+                                        </p>
+                                        <p class="textSendDepoimentos">
+                                            Raphael Pagarim
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="divDepoimento">
-                        <img src="../assets/semFoto.png" alt="">
-                        <div class="divTextDepoimentos">
-                            <p class="textDepoimentos">
-                                "Eu sempre trabalho com muitos produtos e variações. A Perithus trouxe uma
-                                otimização
-                                das
-                                minhas vendas e dia-a-dia e me permitiu ficar mais próxima dos meus clientes com
-                                minha
-                                loja virtual."
-                            </p>
-                            <p class="text-right textDepoimentos" style="padding-top: 5px;">
-                                Juliana Vilaça
-                            </p>
+                        <div class="carousel-item">
+                            <div class="divDepoimentosInLine">
+                                <div class="divDepoimento">
+                                    <img src="../assets/alexandre.png" alt="" style="height: 282px;">
+                                    <div class="divTextDepoimentos">
+                                        <p class="textDepoimentos">
+                                            "A Perithus Technologies é nossa parceira de Tecnologia. Confio no trabalho
+                                            da
+                                            equipe!
+                                            Eles sempre buscam a excelência."
+                                        </p>
+                                        <p class="textSendDepoimentos" style="padding-top: 5px;">
+                                            Alexandre Ramin
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="divDepoimento">
+                                    <img src="../assets/semFoto-depoimentos.png" alt="">
+                                    <div class="divTextDepoimentos">
+                                        <p class="textDepoimentos">
+                                            "Eu sempre trabalho com muitos produtos e variações. A Perithus trouxe uma
+                                            otimização
+                                            das
+                                            minhas vendas e dia-a-dia e me permitiu ficar mais próxima dos meus clientes
+                                            com
+                                            minha
+                                            loja virtual."
+                                        </p>
+                                        <p class="textSendDepoimentos" style="padding-top: 5px;">
+                                            Juliana Vilaça
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="divDepoimento">
+                                    <img src="../assets/semFoto-depoimentos.png" alt="">
+                                    <div class="divTextDepoimentos">
+                                        <p class="textDepoimentos">
+                                            "A Perithus é mais que uma prestadora de serviço no desenvolvimento de
+                                            soluções
+                                            tecnológicas
+                                            pra nós, sentimos que fazem parte do nosso time de fato, profissionais de
+                                            excelente
+                                            qualidade e extremamente focados na entrega dos resultados que esperamos."
+                                        </p>
+                                        <p class="textSendDepoimentos">
+                                            Raphael Pagarim
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="divDepoimentosInLine">
-                    <div class="divPrimeiroDepoimento">
-                        <img src="../assets/semFoto.png" alt="">
-                        <div class="divTextDepoimentos">
-                            <p class="textDepoimentos">
-                                "Desde quando comecei a trabalhar com a Perithus, ela se mostrou uma empresa
-                                competente e
-                                confiável. A Perithus me ajuou principalmente a organizar minhas idéias de negócio,
-                                ajudou-me a trilhar um caminho correto e conseguiu compreender tudo com muita
-                                agilidade e
-                                profissionalismo."
-                            </p>
-                            <p class="text-right textDepoimentos" style="padding-top: 5px;">
-                                Bruno Zequini
-                            </p>
-                        </div>
-                    </div>
-                    <div class="divDepoimento">
-                        <img src="../assets/semFoto.png" alt="">
-                        <div class="divTextDepoimentos">
-                            <p class="textDepoimentos">
-                                "A Perithus é mais que uma prestadora de serviço no desenvolvimento de soluções
-                                tecnológicas
-                                pra nós, sentimos que fazem parte do nosso time de fato, profissionais de excelente
-                                qualidade e extremamente focados na entrega dos resultados que esperamos."
-                            </p>
-                            <p class="text-right textDepoimentos">
-                                Raphael Pagarim
-                            </p>
+                        <div class="carousel-item">
+                            <div class="divDepoimentosInLine">
+                                <div class="divDepoimento">
+                                    <img src="../assets/alexandre.png" alt="" style="height: 282px;">
+                                    <div class="divTextDepoimentos">
+                                        <p class="textDepoimentos">
+                                            "A Perithus Technologies é nossa parceira de Tecnologia. Confio no trabalho
+                                            da
+                                            equipe!
+                                            Eles sempre buscam a excelência."
+                                        </p>
+                                        <p class="textSendDepoimentos" style="padding-top: 5px;">
+                                            Alexandre Ramin
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="divDepoimento">
+                                    <img src="../assets/semFoto-depoimentos.png" alt="">
+                                    <div class="divTextDepoimentos">
+                                        <p class="textDepoimentos">
+                                            "Eu sempre trabalho com muitos produtos e variações. A Perithus trouxe uma
+                                            otimização
+                                            das
+                                            minhas vendas e dia-a-dia e me permitiu ficar mais próxima dos meus clientes
+                                            com
+                                            minha
+                                            loja virtual."
+                                        </p>
+                                        <p class="textSendDepoimentos" style="padding-top: 5px;">
+                                            Juliana Vilaça
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="divDepoimento">
+                                    <img src="../assets/semFoto-depoimentos.png" alt="">
+                                    <div class="divTextDepoimentos">
+                                        <p class="textDepoimentos">
+                                            "A Perithus é mais que uma prestadora de serviço no desenvolvimento de
+                                            soluções
+                                            tecnológicas
+                                            pra nós, sentimos que fazem parte do nosso time de fato, profissionais de
+                                            excelente
+                                            qualidade e extremamente focados na entrega dos resultados que esperamos."
+                                        </p>
+                                        <p class="textSendDepoimentos">
+                                            Raphael Pagarim
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -460,7 +597,7 @@
                                     equipe!
                                     Eles sempre buscam a excelência."
                                 </p>
-                                <p class="text-right textDepoimentos" style="padding-top: 5px;">
+                                <p class="textSendDepoimentos" style="padding-top: 5px;">
                                     Alexandre Ramin
                                 </p>
                             </div>
@@ -476,7 +613,7 @@
                                     minhas vendas e dia-a-dia e me permitiu ficar mais próxima dos meus clientes com
                                     minha loja virtual."
                                 </p>
-                                <p class="text-right textDepoimentos" style="padding-top: 5px;">
+                                <p class="textSendDepoimentos" style="padding-top: 5px;">
                                     Juliana Vilaça
                                 </p>
                             </div>
@@ -494,7 +631,7 @@
                                     agilidade e
                                     profissionalismo."
                                 </p>
-                                <p class="text-right textDepoimentos" style="padding-top: 5px;">
+                                <p class="textSendDepoimentos" style="padding-top: 5px;">
                                     Bruno Zequini
                                 </p>
                             </div>
@@ -510,7 +647,7 @@
                                     pra nós, sentimos que fazem parte do nosso time de fato, profissionais de excelente
                                     qualidade e extremamente focados na entrega dos resultados que esperamos."
                                 </p>
-                                <p class="text-right textDepoimentos" style="padding-top: 5px;">
+                                <p class="textSendDepoimentos" style="padding-top: 5px;">
                                     Raphael Pagarim
                                 </p>
                             </div>
@@ -533,22 +670,34 @@
     <!--Footer start-->
     <div class="divFooter" style="background-image: url(../assets/footer.png);">
         <div class="divConteudoFooter">
-            <div class="primeiroConteudoFooter">
+            <address class="primeiroConteudoFooter">
                 <img src="../assets/logo.png" alt="" class="logoFooter">
                 <p class="text-white textFooter">
-                    Endereço
+                    AVENIDA PAULISTA, 171 - 4 ANDAR
                 </p>
                 <p class="text-white textFooter">
-                    Telefone
+                    BELA VISTA - SÃO PAULO - SP
                 </p>
-            </div>
+            </address>
 
-            <div class="segundoConteudoFooter">
-                <i class="fab fa-facebook-f fa-3x" style="color:#FFF; margin-right: 10px;"></i>
-                <i class="fab fa-instagram fa-3x" style="color:#FFF; margin-right: 10px;"></i>
-                <i class="fab fa-twitter fa-3x" style="color:#FFF; margin-right: 10px;"></i>
-                <i class="fab fa-github fa-3x" style="color:#FFF; margin-right: 10px;"></i>
-                <i class="fab fa-linkedin-in fa-3x" style="color:#FFF;"></i>
+
+            <div class="containerSecund">
+                <p class="text-white textFooterSecund">
+                    ESCOLHA COMO QUER SER ATENDIDO
+                </p>
+                <div class="segundoConteudoFooter">
+                    <a href="https://api.whatsapp.com/send?phone=551130429855" style="text-decoration: none;">
+                        <i class="fab fa-whatsapp fa-3x" style="color:#FFF; margin-right: 50px;"></i>
+                    </a>
+                    <a href="https://www.facebook.com/PerithusTech/" style="text-decoration: none;">
+                        <i class="fab fa-facebook-f fa-3x" style="color:#FFF; margin-right: 50px;"></i>
+                    </a>
+                    <a href="https://www.instagram.com/perithus_tech/?hl=pt-br" style="text-decoration: none;">
+                        <i class="fab fa-instagram fa-3x" style="color:#FFF; margin-right: 50px;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/perithus-tech" style="text-decoration: none;">
+                        <i class="fab fa-linkedin-in fa-3x" style="color:#FFF;"></i>
+                    </a>
             </div>
         </div>
     </div>

@@ -17,7 +17,7 @@
     font-family: 'Lalezar', cursive; 
     font-size: 80px; 
     margin-bottom: 0rem;
-    margin-left: 250px;
+    margin-left: 350px;
 }
 
 .divSecao{
@@ -40,7 +40,7 @@
 
 .textSubTitle{
     font-family: 'Lalezar', cursive; 
-    font-size: 60px; 
+    font-size: 24px; 
     color: #FFB000;
 }
 
@@ -62,6 +62,10 @@
 .divColuna{
     display: flex;
     flex-direction: column;
+}
+
+.divDiscursion {
+    max-width: 50%;
 }
 
 .imgAbreAspas{
@@ -91,17 +95,27 @@
     margin-bottom: 50px;
 }
 
+.textSubTitleVaga{
+    font-family: 'Lalezar', cursive; 
+    font-size: 60.5px; 
+    color: #FFB000;
+}
+
 .divVaga{
     border: 2px solid #434F81;
     padding-top: 30px;
     align-self: flex-start;
     width: 346px;
+    height: 212px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .textVaga{
     font-family:'Niramit', sans-serif;; 
     font-size: 27px; 
-    margin: 20px;
+    margin: 0px 20px;
 }
 
 .divMeCandidatar{
@@ -112,23 +126,24 @@
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.textMeCandidatar{
+    color: #fff;
     font-family:'Niramit', sans-serif;; 
     font-size: 18px; 
     font-weight: bold;
+}
+
+.textMeCandidatar{
+    text-decoration: underline;
     align-self: center;
     margin-bottom: 0px;
-    text-decoration: underline;
-    color: #fff;
 }
 
-.textMeCandidatar:hover{
+.divMeCandidatar:hover{
     color: #FFB000;
+    text-decoration: none;
 }
 
-.textMeCandidatar:visited{
+.divVaga a:visited{
     color: #FFB000;
 }
 
@@ -189,7 +204,7 @@
     }
     
     .textSubTitle{
-        font-size: 36px; 
+        font-size: 28px;
     }
     
     .textDescPerithus{
@@ -203,8 +218,16 @@
 
     .divLinePalavras{
         flex-direction: column;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin: 0px 10px;
+    }
+
+    .divDiscursion{
+        width: 100%;
+        max-width: inherit;
+    }
+
+    .textDescPalavra{
+        margin: 30px 20px;
     }
 
     .imgAbreAspas{
@@ -220,7 +243,21 @@
         margin-right: 0px;
     }
 
+    .textSubTitleVaga{
+        font-size: 40px;
+    }
+
     .divVaga{
         margin-bottom: 50px;
+        width: 310px;
+        height: 180px;
+    }
+
+    .textVaga{
+        font-size: 22px;
+    }
+
+    .btnFaleConosco{
+        font-size: 14px;
     }
 }

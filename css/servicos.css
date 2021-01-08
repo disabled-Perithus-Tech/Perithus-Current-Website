@@ -59,11 +59,10 @@
 .descServico{
     font-family:'Niramit', sans-serif; 
     font-size: 18px; 
-    text-align: justify;
+    text-align: center;
     align-self: center;
     color: #1A1859;
-    margin-left: 30px;
-    margin-right: 30px;
+    width: 516px;
 }
 
 .btnQuantoCusta{
@@ -73,6 +72,9 @@
     font-weight: 600;
     background-color: #F9AF1B;
     align-self: flex-end;
+    font-family:'Niramit', sans-serif; 
+    font-size: 18px; 
+    padding: 8px 40px;
 }
 
 
@@ -89,6 +91,7 @@
 @media only screen and (max-width: 988px){
     .divServico{
         flex-direction: column;
+        width: auto;
     }
 
     .lineServico{
@@ -98,14 +101,20 @@
     .descServico{
         margin-left: 0px; 
         margin-right: 0px;
+        width: auto;
     }
 
     .divImgServico {
         margin-left: 0px;
         margin-right: 0px;
+        margin-left: -30px;
     }
 
     .imgServico{
         width: 98%;
+    }
+
+    .btnQuantoCusta{
+        font-size: 14px;
     }
 }

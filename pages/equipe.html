@@ -8,6 +8,16 @@
         Perithus
     </title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170460746-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-170460746-1');
+    </script>
+
     <!--ícones-->
     <link href="../fontawesome/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
 
@@ -34,7 +44,8 @@
 
         <!--Header start-->
         <div class="divBanner" style="background-image: url(../assets/header.png); ">
-            <nav class="navbar navbar-expand-lg" style="margin-top: -10px;">
+            <nav class="navbar navbar-expand-lg"
+                style="margin-top: -10px; margin-top: -10px; display: flex; justify-content: space-between;">
                 <a class="navbar-brand" href="./index.html">
                     <img src="../assets/logo.png" class="logo">
                 </a>
@@ -48,28 +59,33 @@
                 <div class="collapse navbar-collapse justify-content-end" id="conteudoNavbarSuportado">
                     <ul class="navbar-nav  justify-content-end" style="margin-bottom: 40px;">
                         <li class="nav-item">
-                            <a class="nav-link active btnNavActions btnNavActions" href="./index.html">Home</a>
+                            <a class="nav-link active btnNavActions" href="./index.html">Home</a>
                         </li>
-                        <li class="nav-item dropdown"
-                            style="background-image: url(../assets/click.png); background-repeat: no-repeat;">
-                            <a class="nav-link dropdown-toggle btnNavActions" data-toggle="dropdown" href="#"
-                                role="button" aria-haspopup="true" aria-expanded="false">Sobre nós</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link btnNavActions" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false" style="color:#FFB000;">
+                                Sobre nós
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item btnNavActions text-dark" href="./equipe.html">Quem somos nós</a>
+                                <a class="dropdown-item btnNavActions text-dark" href="./equipe.html">Quem somos
+                                    nós</a>
                             </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active btnNavActions btnNavActions" href="./servicos.html">Serviços</a>
                         </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btnNavActions" href="./carreiras.html">Carreiras</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link btnNavActions" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Carreiras
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item btnNavActions text-dark" href="./carreiras.html">Carreiras</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btnNavActions" href="./projetos.html">Projetos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btnNavActions" href="./blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btnNavActions" href="./contato.html">Contato</a>
@@ -80,92 +96,22 @@
         </div>
         <!--Header end-->
 
-        <!--Section Equipe start-->
+        <!--Section Nossos clientes start-->
         <div>
             <p class="title primeiroTitulo">
-                EQUIPE
+                NOSSOS CLIENTES
             </p>
             <div class="titleSecoes">
                 <div>
                     <hr class="line" />
                 </div>
                 <div>
-                    <p class="subTitle"> QUEM FAZ ACONTECER NA PERITHUS </p>
+                    <p class="subTitle"> </p>
                 </div>
             </div>
-
-            <div id="carouselEquipe" class="carousel slide divCarouselEquipe1" data-ride="carousel" data-interval="0"
-                style="margin-top: 50px;">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" style="text-align: center;">
-                        <div class="divEquipe">
-                            <div class="divCardFoto1">
-                                <img src="../assets/nurian.jpeg" alt="" class="imgCard">
-                            </div>
-                            <div class="divCardFoto2" style="height: 315px;">
-                                <img src="../assets/semFotoEquipe.png" style="height: 200px;" alt="" class="imgCard">
-                            </div>
-                            <div class="divCardFoto1" style="height: 315px;">
-                                <img src="../assets/semFotoEquipe.png" style="height: 200px;" alt="" class="imgCard">
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselEquipe" role="button" data-slide="prev">
-                        <i class="fas fa-chevron-circle-left fa-3x" style="color: black;"></i>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselEquipe" role="button" data-slide="next">
-                        <i class="fas fa-chevron-circle-right fa-3x" style="color: black;"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div id="carouselEquipeMobile" class="carousel slide divCarouselEquipe2" data-ride="carousel"
-                data-interval="0" style="margin-top: 50px;">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" style="text-align: -webkit-center;">
-                        <div class="divCardFoto1">
-                            <img src="../assets/nurian.jpeg" alt="" class="imgCard">
-                        </div>
-                    </div>
-                    <div class="carousel-item" style="text-align: -webkit-center;">
-                        <div class="divCardFoto2" style="height: 315px;">
-                            <img src="../assets/semFotoEquipe.png" style="height: 200px;" alt="" class="imgCard">
-                        </div>
-                    </div>
-                    <div class="carousel-item" style="text-align: -webkit-center;">
-                        <div class="divCardFoto1" style="height: 315px;">
-                            <img src="../assets/semFotoEquipe.png" style="height: 200px;" alt="" class="imgCard">
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselEquipeMobile" role="button" data-slide="prev">
-                    <i class="fas fa-chevron-circle-left fa-3x" style="color: black;"></i>
-                </a>
-                <a class="carousel-control-next" href="#carouselEquipeMobile" role="button" data-slide="next">
-                    <i class="fas fa-chevron-circle-right fa-3x" style="color: black;"></i>
-                </a>
-            </div>
-        </div>
-        <!--Section Equipe end-->
-
-
-        <!--Section História start-->
-        <div class="divSecoes">
-            <p class="title">
-                HISTÓRIA
-            </p>
-            <div class="titleSecoes">
-                <div>
-                    <hr class="line" />
-                </div>
-                <div>
-                    <p class="subTitle"> DE ONDE VIEMOS E PORQUE ESTAMOS AQUI </p>
-                </div>
-            </div>
-
             <img src="../assets/historia.png" alt="" class="imgHistoria">
         </div>
-        <!--Section História end-->
+        <!--Section Nossos clientes end-->
 
 
         <!--Section Missão start-->
@@ -183,8 +129,11 @@
             </div>
 
             <div class="divMissao">
-                <p class="textMissao"> Texto </p>
-                <img src="../assets/semImgMissao.png" alt="" class="imgMissao">
+                <p class="textMissao">
+                    Nossa missão é oferecer tecnologia de ponta a um custo acessível a empreendedores
+                    ao redor do mundo e ser referência em qualidade e satisfação do cliente.
+                </p>
+                <img src="../assets/missao.png" alt="" class="imgMissao">
             </div>
 
 
@@ -204,22 +153,34 @@
     <!--Footer start-->
     <div class="divFooter" style="background-image: url(../assets/footer.png);">
         <div class="divConteudoFooter">
-            <div class="primeiroConteudoFooter">
+            <address class="primeiroConteudoFooter">
                 <img src="../assets/logo.png" alt="" class="logoFooter">
                 <p class="text-white textFooter">
-                    Endereço
+                    AVENIDA PAULISTA, 171 - 4 ANDAR
                 </p>
                 <p class="text-white textFooter">
-                    Telefone
+                    BELA VISTA - SÃO PAULO - SP
                 </p>
-            </div>
+            </address>
 
-            <div class="segundoConteudoFooter">
-                <i class="fab fa-facebook-f fa-3x" style="color:#FFF; margin-right: 10px;"></i>
-                <i class="fab fa-instagram fa-3x" style="color:#FFF; margin-right: 10px;"></i>
-                <i class="fab fa-twitter fa-3x" style="color:#FFF; margin-right: 10px;"></i>
-                <i class="fab fa-github fa-3x" style="color:#FFF; margin-right: 10px;"></i>
-                <i class="fab fa-linkedin-in fa-3x" style="color:#FFF;"></i>
+
+            <div class="containerSecund">
+                <p class="text-white textFooterSecund">
+                    ESCOLHA COMO QUER SER ATENDIDO
+                </p>
+                <div class="segundoConteudoFooter">
+                    <a href="https://api.whatsapp.com/send?phone=551130429855" style="text-decoration: none;">
+                        <i class="fab fa-whatsapp fa-3x" style="color:#FFF; margin-right: 50px;"></i>
+                    </a>
+                    <a href="https://www.facebook.com/PerithusTech/" style="text-decoration: none;">
+                        <i class="fab fa-facebook-f fa-3x" style="color:#FFF; margin-right: 50px;"></i>
+                    </a>
+                    <a href="https://www.instagram.com/perithus_tech/?hl=pt-br" style="text-decoration: none;">
+                        <i class="fab fa-instagram fa-3x" style="color:#FFF; margin-right: 50px;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/perithus-tech" style="text-decoration: none;">
+                        <i class="fab fa-linkedin-in fa-3x" style="color:#FFF;"></i>
+                    </a>
             </div>
         </div>
     </div>

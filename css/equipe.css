@@ -47,14 +47,16 @@
 .divMissao{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     margin-top: 150px;
 }
 
 .textMissao{
     font-family:'Niramit', sans-serif;; 
-    font-size: 18px; 
+    font-size: 27px; 
     align-self: center;
+    width: 455px;
+    margin-right: 80px;
 }
 
 .textFaleConosco{
@@ -105,12 +107,24 @@
         margin-top: 50px;
     }
 
+    .textMissao{
+        width: auto;
+        margin-right: 0px;
+        font-size: 18px;
+        padding: 0px 30px;
+        text-align: center;
+    }
+    
     .imgMissao{
         width: 90%;
     }
 
     .textFaleConosco{
-        font-size: 27px;
+        font-size: 22px;
+    }
+
+    .btnFaleConosco{
+        font-size: 12px;
     }
 
 }

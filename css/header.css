@@ -17,10 +17,21 @@
 
 .btnNavActions{
     color: #FFF;
+    font-weight: 500;
+    font-family:'Niramit', sans-serif;
+    font-size: 18px;
 }
 
 .btnNavActions:hover{
     color: #FFB000!important;
+}
+
+.btnLogin {
+    text-align: right;
+}
+
+.btnLoginNav{
+    display: none;
 }
 
 @media only screen and (max-width: 988px){
@@ -39,6 +50,14 @@
     }
 
     .iconMenu2{
+        display: block;
+    }
+        
+    .btnLogin {
+        display: none;
+    }
+
+    .btnLoginNav{
         display: block;
     }
 }

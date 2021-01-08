@@ -8,6 +8,16 @@
         Perithus
     </title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170460746-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-170460746-1');
+    </script>
+
     <!--ícones-->
     <link href="../fontawesome/fontawesome-free-5.15.1-web/css/all.css" rel="stylesheet">
 
@@ -16,9 +26,9 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!--fontes-->
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Niramit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" />
 
     <!--Arquivo css-->
     <link rel="stylesheet" href="../css/header.css">
@@ -55,27 +65,33 @@
                             <a class="nav-link active btnNavActions btnNavActions" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle btnNavActions" data-toggle="dropdown" href="#"
-                                role="button" aria-haspopup="true" aria-expanded="false">Sobre nós</a>
+                            <a class="nav-link btnNavActions" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">
+                                Sobre nós
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item btnNavActions text-dark" href="./equipe.html">Quem somos nós</a>
+                                <a class="dropdown-item btnNavActions text-dark" href="./equipe.html">Quem somos
+                                    nós</a>
                             </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active btnNavActions btnNavActions" href="./servicos.html">Serviços</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link btnNavActions" href="./carreiras.html">Carreiras</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link btnNavActions" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Carreiras
+                                <i class="fa fa-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item btnNavActions text-dark" href="./carreiras.html">Carreiras</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btnNavActions" href="./projetos.html">Projetos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btnNavActions" href="./blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item"
-                            style="background-image: url(../assets/click.png); background-repeat: no-repeat;">
-                            <a class="nav-link btnNavActions" href="./contato.html">Contato</a>
+                            <a class="nav-link btnNavActions" href="./contato.html" style="color:#FFB000;">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -94,169 +110,110 @@
                 </div>
                 <div>
                     <p class="subTitle">
-                        PREENCHA OS CAMPOS ABAIXO E MANDE SUA MENSAGEM, RESPONDEMOS RAPIDINHO!
+                        ENCONTRE NOSSOS CANAIS E MANDE SUA MENSAGEM, RESPONDEMOS RAPIDINHO!
                     </p>
                 </div>
             </div>
 
-            <div class="divBackgroundContato"
-                style="background-image: url(../assets/Vector2.png); background-repeat: no-repeat;">
-                <div class="divFormContato">
-                    <form id="formContato">
-                        <div class="form-group">
-                            <label for="nome">Nome</label>
-                            <div class="input-group mb-2 divValidateNome">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text iconInputContato">
-                                        <i class="fas fa-user"></i>
-                                    </div>
-                                </div>
-                                <input type="text" class="form-control inputContato" id="nome"
-                                    placeholder="Escreva seu nome completo" required onchange="validityClass(this)">
-                                <div class="invalid-feedback">
-                                    Por favor, preencha este campo.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="empresa">Empresa</label>
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text iconInputContato">
-                                        <i class="fas fa-briefcase"></i>
-                                    </div>
-                                </div>
-                                <input type="text" class="form-control inputContato" id="empresa"
-                                    placeholder="Escreva o nome da sua empresa" required onchange="validityClass(this)">
-                                <div class="invalid-feedback">
-                                    Por favor, preencha este campo.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text iconInputContato">
-                                        <i class="fas fa-envelope"></i>
-                                    </div>
-                                </div>
-                                <input type="email" class="form-control inputContato" id="email"
-                                    placeholder="Escreva seu email" required onchange="validityClass(this)">
-                                <div class="invalid-feedback">
-                                    Email inválido, podemos te ajudar a escrever um correto.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="mensagem">Mensagem</label>
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text iconInputContato">
-                                        <i class="fas fa-comment-alt"
-                                            style="align-self: flex-start; margin-top: 5px;"></i>
-                                    </div>
-                                </div>
-                                <textarea class="form-control inputContato" id="mensagem"
-                                    placeholder="O que a Perithus pode fazer por você?" rows="4" required
-                                    onchange="validityClass(this)"></textarea>
-                                <div class="invalid-feedback">
-                                    Por favor, preencha este campo.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="pesquisa">Pesquisa</label>
-                            <div class="input-group mb-2">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text iconInputContato">
-                                        <i class="fas fa-pencil-alt"></i>
-                                    </div>
-                                </div>
-                                <select class="custom-select inputContato" id="pesquisa" required
-                                    onchange="validityClass(this)">
-                                    <option selected value="">Como você encontrou a Pertihus?</option>
-                                    <option>Bubble.io</option>
-                                    <option>Instagram</option>
-                                    <option>Facebook</option>
-                                    <option>Twitter</option>
-                                    <option>LinkedIn</option>
-                                    <option>Indicação</option>
-                                    <option>Google</option>
-                                    <option>Outros</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Por favor, selecione uma opção.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="divBtnEnviar">
-                            <button class="btn btnFomEnviar" onclick="submitForm()">
-                                Enviar
-                            </button>
-                        </div>
-                    </form>
+            <div class="divContainerContato">
+                <p class="textNossosCanais">
+                    NOSSOS CANAIS
+                </p>
+
+                <div class="containerContatos">
+                    <div class="containerContatosLine">
+                        <a class="contatoSingleFundo contatoSingleLeft" href="https://api.whatsapp.com/send?phone=551130429855">
+                            <i class="fab fa-whatsapp contatoIconTransparent contatoIconLeft"></i>
+                            <p class="textContatoTransparent textContatoLeft">
+                                WHATSAPP
+                            </p>
+                        </a>
+                        <a class="contatoSingleTransparent contatoSingleRight" href="tel:+55-11-3042-9855 ">
+                            <i class="fas fa-phone-alt contatoIconFundo contatoIconRight"></i>
+                            <p class="textContatoFundo textContatoRight">
+                                TELEFONE
+                            </p>
+                        </a>
+                    </div>
+                    <div class="containerContatosLine">
+                        <a class="contatoSingleTransparent contatoSingleLeft" href="mailto:contact@perithus.tech">
+                            <i class="fas fa-envelope contatoIconFundo contatoIconLeft"></i>
+                            <p class="textContatoFundo textContatoLeft">
+                                EMAIL
+                            </p>
+                        </a>
+                        </a>
+                        <a class="contatoSingleFundo contatoSingleRight" href="https://www.facebook.com/PerithusTech/">
+                            <i class="fab fa-facebook-f contatoIconTransparent contatoIconRight"></i>
+                            <p class="textContatoTransparent textContatoRight">
+                                FACEBOOK
+                            </p>
+                        </a>
+                    </div>
+                    <div class="containerContatosLine">
+                        <a class="contatoSingleFundo contatoSingleLeft" href="https://www.instagram.com/perithus_tech/?hl=pt-br">
+                            <i class="fab fa-instagram contatoIconTransparent contatoIconLeft"></i>
+                            <p class="textContatoTransparent textContatoLeft">
+                                INSTAGRAM
+                            </p>
+                        </a>
+                        <a class="contatoSingleTransparent contatoSingleRight" href="https://www.linkedin.com/company/perithus-tech">
+                            <i class="fab fa-linkedin-in contatoIconFundo contatoIconRight"></i>
+                            <p class="textContatoFundo textContatoRight">
+                                LINKEDIN
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </div>
+            <!--Section FALE COM A GENTE end-->
 
-            <div class="divEndereco">
-                <p class="textContato" style="margin-bottom: 0px;">
-                    (11) 3042-9855
-                </p>
-                <p class="textContato">
-                    contact@perithus.tech
-                </p>
-                <p class="textEndereço" style="margin-bottom: 0px;">
-                    Av. Paulista, 171 - 4 Andar - Bela Vista
-                </p>
-                <p class="textEndereço">
-                    São Paulo - SP
-                </p>
+        </div>
+        <!--Body end-->
 
-                <div class="divMapa">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.94766411619!2d-46.64839268538365!3d-23.570323067807543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59bde167de5b%3A0x69fccfe3ec643722!2sAv.%20Paulista%2C%20171%20-%204%20Andar%20-%20Para%C3%ADso%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001311-000!5e0!3m2!1spt-BR!2sbr!4v1605286603423!5m2!1spt-BR!2sbr"
-                        width="600" height="450" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""
-                        aria-hidden="false" tabindex="0"></iframe>
+        <!--Footer start-->
+        <div class="divFooter" style="background-image: url(../assets/footer.png);">
+            <div class="divConteudoFooter">
+                <address class="primeiroConteudoFooter">
+                    <img src="../assets/logo.png" alt="" class="logoFooter">
+                    <p class="text-white textFooter">
+                        AVENIDA PAULISTA, 171 - 4 ANDAR
+                    </p>
+                    <p class="text-white textFooter">
+                        BELA VISTA - SÃO PAULO - SP
+                    </p>
+                </address>
+
+
+                <div class="containerSecund">
+                    <p class="text-white textFooterSecund">
+                        ESCOLHA COMO QUER SER ATENDIDO
+                    </p>
+                    <div class="segundoConteudoFooter">
+                        <a href="https://api.whatsapp.com/send?phone=551130429855" style="text-decoration: none;">
+                            <i class="fab fa-whatsapp fa-3x" style="color:#FFF; margin-right: 50px;"></i>
+                        </a>
+                        <a href="https://www.facebook.com/PerithusTech/" style="text-decoration: none;">
+                            <i class="fab fa-facebook-f fa-3x" style="color:#FFF; margin-right: 50px;"></i>
+                        </a>
+                        <a href="https://www.instagram.com/perithus_tech/?hl=pt-br" style="text-decoration: none;">
+                            <i class="fab fa-instagram fa-3x" style="color:#FFF; margin-right: 50px;"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/perithus-tech" style="text-decoration: none;">
+                            <i class="fab fa-linkedin-in fa-3x" style="color:#FFF;"></i>
+                        </a>
                 </div>
             </div>
         </div>
-        <!--Section FALE COM A GENTE end-->
+        <!--Footer end-->
 
-    </div>
-    <!--Body end-->
-
-    <!--Footer start-->
-    <div class="divFooter" style="background-image: url(../assets/footer.png);">
-        <div class="divConteudoFooter">
-            <div class="primeiroConteudoFooter">
-                <img src="../assets/logo.png" alt="" class="logoFooter">
-                <p class="text-white textFooter">
-                    Endereço
-                </p>
-                <p class="text-white textFooter">
-                    Telefone
-                </p>
-            </div>
-
-            <div class="segundoConteudoFooter">
-                <i class="fab fa-facebook-f fa-3x" style="color:#FFF; margin-right: 10px;"></i>
-                <i class="fab fa-instagram fa-3x" style="color:#FFF; margin-right: 10px;"></i>
-                <i class="fab fa-twitter fa-3x" style="color:#FFF; margin-right: 10px;"></i>
-                <i class="fab fa-github fa-3x" style="color:#FFF; margin-right: 10px;"></i>
-                <i class="fab fa-linkedin-in fa-3x" style="color:#FFF;"></i>
-            </div>
-        </div>
-    </div>
-    <!--Footer end-->
-
-    <!--Plugins-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+        <!--Plugins-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
