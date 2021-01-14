@@ -67,33 +67,25 @@
                                 <a class="nav-link active btnNavActions" href="./index.html"
                                     style="color:#FFB000;">Home</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link btnNavActions" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="true" aria-expanded="false">
+                            <li class="nav-item">
+                                <a class="nav-link btnNavActions" href="./equipe.html">
                                     Sobre nós
-                                    <i class="fa fa-chevron-down"></i>
                                 </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item btnNavActions text-dark" href="./equipe.html">Quem somos
-                                        nós</a>
-                                </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active btnNavActions btnNavActions"
-                                    href="./servicos.html">Serviços</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link btnNavActions" data-toggle="dropdown" href="#" role="button"
-                                    aria-haspopup="true" aria-expanded="false">Carreiras
-                                    <i class="fa fa-chevron-down"></i>
+                                <a class="nav-link btnNavActions" href="./servicos.html">
+                                    Serviços
                                 </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item btnNavActions text-dark"
-                                        href="./carreiras.html">Carreiras</a>
-                                </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link btnNavActions" href="./contato.html">Contato</a>
+                                <a class="nav-link btnNavActions" href="./carreiras.html">
+                                    Carreiras
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btnNavActions" href="./contato.html">
+                                    Contato
+                                </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link btnNavActions btnLoginNav" href="#">
@@ -126,7 +118,10 @@
                     NÃO PERCA TEMPO!
                 </p>
 
-                <button class="btn btn-warning btnSaibaMais btnBodyActions"> SAIBA MAIS </button>
+                <button class="btn btn-warning btnSaibaMais btnBodyActions"
+                    onclick="window.location.href='./servicos.html'">
+                    SAIBA MAIS
+                </button>
             </div>
         </div>
         <!--Header end-->
@@ -157,7 +152,7 @@
                     </div>
                     <div class="divDescVantegem">
                         <p class="textDescVantegem">
-                            Não perdemos negócio! Crie seu projeto com uma redução de até 10 vezes no custo!
+                            Não perdemos negócio! Crie seu projeto com uma redução de <b>até 10 vezes</b> no custo!
                         </p>
                     </div>
                 </div>
@@ -172,7 +167,7 @@
                     </div>
                     <div class="divDescVantegem">
                         <p class="textDescVantegem">
-                            Nosso time pode construir o sistema que você precisa em semanas (ao invés de meses).
+                            Nosso time pode construir o sistema que você precisa <b>em semanas</b> (ao invés de meses).
                         </p>
                     </div>
                 </div>
@@ -188,7 +183,7 @@
                     <div class="divDescVantegem">
                         <p class="textDescVantegem">
                             Nossa garantia de satisfação cobre 15 dias após a entrega do projeto e temos uma das maiores
-                            taxas de aprovação do mercado: 98,6%
+                            taxas de aprovação do mercado: <b>98,6%</b>
                         </p>
                     </div>
                 </div>
@@ -283,7 +278,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn btn-warning btnQuantoCusta btnBodyActions"> VEJA QUANTO CUSTA </button>
+                            <button class="btn btn-warning btnQuantoCusta btnBodyActions"
+                                onclick="window.location.href=`https://api.whatsapp.com/send?phone=551130429855&text=Quero%20falar%20com%20um%20especialista`">
+                                VEJA QUANTO CUSTA
+                            </button>
                         </div>
                     </div>
 
@@ -343,8 +341,10 @@
                             </div>
                         </div>
                         <div style="display: flex; justify-content: center;">
-                            <button class="btn btn-warning btnQuantoCusta btnBodyActions" style="margin-bottom: 20px;">
-                                VEJA QUANTO CUSTA </button>
+                            <button class="btn btn-warning btnQuantoCusta btnBodyActions" style="margin-bottom: 20px;"
+                                onclick="window.location.href=`https://api.whatsapp.com/send?phone=551130429855&text=Quero%20falar%20com%20um%20especialista`">
+                                VEJA QUANTO CUSTA
+                            </button>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselSuaIdeia" role="button" data-slide="prev">
@@ -424,10 +424,10 @@
                         <li data-target="#carouselDepoimentos1" data-slide-to="1"></li>
                     </ol>
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item active" data-interval="5000">
                             <div class="divDepoimentosInLine">
                                 <div class="divDepoimento">
-                                    <img src="../assets/semFoto-depoimentos.png" alt="" style="height: 282px;">
+                                    <img src="../assets/alexandre.png" alt="" style="height: 282px;">
                                     <div class="divTextDepoimentos">
                                         <p class="textDepoimentos">
                                             "A Perithus Technologies é nossa parceira de Tecnologia. Confio no trabalho
@@ -475,7 +475,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" data-interval="5000">
                             <div class="divDepoimentosInLine">
                                 <div class="divDepoimento">
                                     <img src="../assets/semFoto-depoimentos.png" alt="" style="height: 282px;">
@@ -516,9 +516,9 @@
             <div id="carouselDepoimentos" class="carousel slide divDepoimentosGroup2" data-ride="carousel"
                 data-interval="0">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-interval="5000">
                         <div class="divDepoimento">
-                            <img src="../assets/semFoto-depoimentos.png" alt="" style="width: 60%;">
+                            <img src="../assets/alexandre.png" alt="" style="width: 60%;">
                             <div class="divTextDepoimentos">
                                 <p class="textDepoimentos">
                                     "A Perithus Technologies é nossa parceira de Tecnologia. Confio no trabalho
@@ -531,7 +531,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-interval="5000">
                         <div class="divDepoimento">
                             <img src="../assets/semFoto.png" alt="" style="width: 60%;">
                             <div class="divTextDepoimentos">
@@ -547,7 +547,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-interval="5000">
                         <div class="divDepoimento">
                             <img src="../assets/semFoto.png" alt="" style="width: 60%;">
                             <div class="divTextDepoimentos">
@@ -563,7 +563,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-interval="5000">
                         <div class="divDepoimento">
                             <img src="../assets/semFoto.png" alt="" style="width: 60%;">
                             <div class="divTextDepoimentos">
@@ -579,7 +579,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-interval="5000">
                         <div class="divDepoimento">
                             <img src="../assets/semFoto.png" alt="" style="width: 60%;">
                             <div class="divTextDepoimentos">

@@ -35,22 +35,23 @@
 .titleSecao{
     font-weight: bold;
     font-family:'Niramit', sans-serif;; 
-    font-size: 27px; 
+    font-size: 30px; 
 }
 
 .textSubTitle{
     font-family: 'Lalezar', cursive; 
-    font-size: 24px; 
+    font-size: 27px; 
     color: #FFB000;
 }
 
 .textDescPerithus{
     font-family:'Niramit', sans-serif;; 
-    font-size: 18px; 
+    font-size: 22px; 
 }
 
 .imgPerithus{
-    width: 50%;
+    height: 400px;
+    align-self: center;
 }
 
 .divLinePalavras{
@@ -78,7 +79,7 @@
 
 .textDescPalavra{
     font-family:'Niramit', sans-serif;; 
-    font-size: 18px; 
+    font-size: 22px; 
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 30px;
@@ -212,11 +213,11 @@
     }
     
     .textDescPerithus{
-        font-size: 12px; 
+        font-size: 16px; 
     }
 
     .imgPerithus{
-        width: 80%;
+        height: 220px;
         align-self: center;
     }
 
@@ -232,10 +233,16 @@
 
     .textDescPalavra{
         margin: 30px 20px;
+        font-size: 16px;
     }
 
     .imgAbreAspas{
         margin-top: 50px;
+        height: 20px;
+    }
+
+    .imgFechaAspas{
+        height: 20px;
     }
 
     .divLineVaga{
