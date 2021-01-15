@@ -302,6 +302,10 @@
 
 
 @media only screen and (max-width: 988px){
+    .divBanner{
+        height: 392px;
+    }
+
     .divTextBanner{
         margin-right: 50px; 
         margin-left: 30px; 
@@ -311,13 +315,13 @@
     
     .titleBanner{
         font-family:'Lalezar', cursive; 
-        font-size: 18px; 
+        font-size: 22px; 
         margin-bottom: -8px;
     }
     
     .subTitleBanner{
         font-family:'Niramit', sans-serif;; 
-        font-size: 10px; 
+        font-size: 10.5px; 
         font-weight: 300;
         margin-right: 0px;
         margin-top: 5px;
@@ -477,6 +481,10 @@
 }
 
 @media only screen and (min-width: 989px) and (max-width: 1024px){
+    .divBanner{
+        max-height: 392px;
+    }
+
     .divTextBanner{
         margin-top: 20px;
     }
