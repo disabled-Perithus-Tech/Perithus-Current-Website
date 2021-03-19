@@ -1,0 +1,52 @@
+.Navbar{
+
+    margin-left: 800px;     
+    margin-top: -100px;
+    color:#FFFFFF;
+    justify-content: space-around;
+
+}
+.textNav1{
+    cursor: pointer;    
+   font-Size:27px;    
+    color:#FFFFFF;
+    text-decoration: none;
+    margin: 10px;
+
+}    
+.textNav2{
+    cursor: pointer;
+    margin: 10px;
+    font-Size:27px;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.textNav3{
+    cursor: pointer;
+    margin: 10px;
+   font-Size:27px;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.textNav4{
+    cursor: pointer;
+    margin: 10px;
+   font-Size:27px;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.textNav5{
+    cursor: pointer;
+    font-Size:27px;
+    color:#FFFFFF;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.textNav6{
+    cursor: pointer;
+    font-Size:27px;
+    color:#FFFFFF;
+    text-decoration: none;
+    margin: 10px;    
+}

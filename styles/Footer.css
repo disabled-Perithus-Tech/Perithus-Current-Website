@@ -1,0 +1,56 @@
+.imgFooter{
+    width: 1582px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    background-image: url('./../assets/img/backFooter.png');
+    
+}
+.logoFooter{
+    Width:154px;
+    Height:201px;
+    margin-top: 220px;
+    margin-left: 125px;
+}
+.subTextFooter{
+    margin-left: 125px;
+    color:#FFFFFF;
+}
+.subTextFooter1{
+    margin-top: 20px;
+}
+.subTextFooter2{
+    margin-top: 20px;
+}
+
+.textIcons{
+    color: #FFFFFF;
+    font-size: 25px;
+    margin-left: 65%;
+    margin-top: -220px;   
+}
+.footerIcons{
+
+    text-align: center;
+    margin-left: 60%;    
+    font-size: 40px;
+    margin-top: 30px;
+       
+}
+.iconWhatsapp{
+    color: #FFFFFF;
+    margin: 20px;
+}
+.iconFacebook{
+    color: #FFFFFF;
+    margin: 20px;
+}
+.iconInstagram{
+    color: #FFFFFF;
+    margin: 20px;
+}
+.iconLinkedin{
+    color: #FFFFFF;
+    margin: 20px;
+}

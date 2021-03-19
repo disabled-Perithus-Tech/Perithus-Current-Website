@@ -1,0 +1,337 @@
+/* Grupo do Banner */
+.imgBanner{
+    
+    width: 1582px;
+    height: 1200.6px;
+    background-image: url('./../assets/img/Group\ 114.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    user-select: none;       
+    top: 0px;
+}
+
+.logo{
+    margin-left: 81px;
+    margin-top: 87.14px;
+    
+}
+
+.textBanner{
+    
+    color: #FFFFFF;
+    font-size: 80px;
+    margin-left: 68px;
+    margin-top: 117px;
+    text-align: justify;
+    font-family: Lalezar;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.subTextBanner{
+    color: #FFFFFF;
+    font-size: 18px;    
+    margin-left: 68px;
+    margin-top: 26px;
+    text-align: justify;
+}
+
+.subTextBanner2{
+    margin-top:116px;
+    text-align: center;    
+    color: #FFFFFF;
+    font-size:27px;
+    
+}
+.button{
+    text-align: center;
+    
+}
+.buttonSm{
+      
+    color: #000000;
+    margin-top:21px;    
+    font-size: 18px;    
+    width: 186px;
+    height: 60px;
+    cursor: pointer;
+    background: #F9AF1B;
+    border-radius: 15px;
+    border:none;
+    border-bottom: none;
+    
+    
+       
+}
+.buttonSm:hover{
+    background: #FFDC97;
+    border:none;
+}
+
+.buttonSm:focus{
+    background: #B07D17;
+    border:none;
+    box-shadow: none;
+    
+}
+
+/* Grupo Vantagens */
+
+
+.Grupo1{
+    width: 1582px;
+    height: 700px;
+    user-select: none;
+}
+.textGrupo1{
+    font-size: 91px;
+    color: #074680;
+    margin-left: 39px;
+    font-size: Lalezar;
+
+}
+.border{
+    margin-top: 27px;
+    width: 400px;
+    height: 0px;
+    border: 3px solid #074680;
+}
+.subTextGrupo1{
+    width: 1080px;
+    margin-left: 420px;
+    margin-top: -14px;
+    font-size: 20px;
+}
+
+
+.custo{
+    margin-left: 60px;
+    margin-top: 50px;
+
+}
+
+.textCusto{
+    margin-left: 60px;
+    margin-top: -20px;
+    color:#074680;
+    font-size: 27px;
+
+}
+
+.caixa1{
+    Width:350px;
+    Height:150px;   
+    background-image: url('./../assets/img/Rectangle\ 348.png');
+    
+}
+.subTextCusto{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+
+.velocidade{
+    margin-left: 35%;
+    margin-top: -400px;
+    
+}
+
+.textVelocidade{
+    margin-left: 80px;
+    margin-top: -20px;
+    color:#074680;
+    font-size: 27px;
+
+}
+
+.caixa2{
+    width: 350px;
+    height: 150px;    
+    background-image: url('./../assets/img/Rectangle\ 348.png');
+    
+}
+.subTextVelocidade{
+    padding-left: 60px;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+
+.qualidade{
+    margin-left: 65%;
+    margin-top: -405px;
+}
+
+
+.textQualidade{
+    margin-left: 50px;
+    margin-top: -20px;
+    color:#074680;
+    font-size: 27px;
+
+}
+
+.caixa3{
+    width: 350px;
+    height: 150px;    
+    background-image: url('./../assets/img/Rectangle\ 348.png');
+    
+}
+.subTextQualidade{
+    padding-left: 12px;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+/* Grupo Consultoria */
+.consultoria{
+    padding: 0;
+}
+.textConsultoria{
+    width: 1084px;
+    height: 89px;
+    font-size: 80px;
+    color: #074680;
+    font-family: Lalezar;
+    margin-left: 39px;
+}
+.borderCons{
+    margin-top: 90px;
+    width: 400px;
+    height: 0px;
+    border: 3px solid #074680;
+    font-size: 18px;
+}
+.textBorder{
+    font-size: 18px;
+    margin-top: -12px;
+    margin-left: 420px;
+}
+
+/* Sua ideia */
+
+.ideia{
+    width: 1582px;
+    Height:663px;
+    background: linear-gradient(180deg, #6562CF 0%, #3F4D79 100%);
+transform: matrix(-1, 0, 0, 1, 0, 0);
+margin-top: 100px;
+}
+
+.parceiros{
+
+    width: 1582px;
+    height: 600px;
+
+}
+.textParceiros{
+    Width:1042px;
+    Height:91px;
+    font-size: 70px;
+    color: #074680;
+    margin-left: 36px;
+    margin-top: 112px;
+}
+.imgParc{
+    text-align: center;
+    margin-top: 80px;
+    
+}
+.imgParc1{
+    width: 316px;
+    height: 243px;
+    margin: 20px;
+}
+.imgParc2{
+    width: 316px;
+    height: 243px;
+    margin: 20px;
+}
+.imgParc3{
+    width: 316px;
+    height: 243px;
+    margin: 20px;
+}
+.imgParc4{
+    width: 316px;
+    height: 243px;
+    margin: 20px;
+}
+
+.borderParc{
+    margin-top: 30px;
+    width: 400px;
+    height: 0px;
+    border: 3px solid #074680;
+    font-size: 18px;
+}
+.textBorderParc{
+
+    margin-left: 430px;
+    margin-top: -10px;
+    font-size: 18px;
+}
+
+/* Depoimentos */
+.textDepoimentos{
+
+    font-size: 60px;
+    color: #074680;
+    margin-left: 36px;
+    margin-top: 100px;
+}
+.borderDepoimentos{
+    margin-top: 30px;
+    width: 400px;
+    height: 0px;
+    border: 3px solid #074680;
+    font-size: 18px;
+}
+.textBoderDepoimentos{
+    
+    margin-left: 430px;
+    margin-top: -10px;
+    font-size: 18px;
+
+}
+.parentDepoimentos {
+    width: 1582px;
+    margin-top: 52px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    }
+    
+    .Dep1 { grid-area: 1 / 1 / 2 / 2; }
+    .Dep2 { grid-area: 1 / 2 / 2 / 3; }
+    .Dep3 { grid-area: 1 / 3 / 2 / 4; }
+
+    .imgDep1{
+        Width:352px;
+        Height:282px;
+    }
+    .imgDep2{
+        margin-top: -8px;
+        Width:352px;
+        Height:282px;
+    }
+    .imgDep3{
+        Width:352px;
+        Height:282px;
+    }
+    .textDep1{
+        margin-top: 10px;
+    }
+    .textDep2{
+        margin-top: 10px;
+    }
+    .textDep3{
+        margin-top: 10px;
+    }    
+
+    
