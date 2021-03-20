@@ -1,8 +1,8 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
-import {Navbar} from '../Components/Navbar'
-import {Footer} from '../Components/Footer'
+import {Navbar} from '../components/Navbar'
+import {Footer} from '../components/Footer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faWhatsapp, faInstagram, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
 

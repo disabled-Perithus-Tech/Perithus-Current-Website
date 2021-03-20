@@ -5,7 +5,7 @@ import Link from 'next/link'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faWhatsapp, faInstagram, faLinkedinIn} from '@fortawesome/free-brands-svg-icons'
-import {Navbar} from './../Components/Navbar'
+import {Navbar} from './../components/Navbar'
 
 
 
